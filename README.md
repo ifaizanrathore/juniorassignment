@@ -1,4 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📝 Public Blog & Admin Dashboard
+
+A modern full-stack blog and admin dashboard built with **Next.js 14**, **Tailwind CSS**, **TypeScript**, **React Query**, and **shadcn/ui**. This project consumes the [JSONPlaceholder](https://jsonplaceholder.typicode.com/) API for blog post data and includes a clean, responsive UI with client/server rendering.
+
+---
+
+## 🚀 Features
+
+### ✅ Public Blog
+- List of posts displayed from the JSONPlaceholder API
+- SEO-optimized and server-side rendered
+- Responsive UI with smooth hover effects
+- Clean design using `shadcn/ui` components
+
+### 🛠 Admin Dashboard
+- Route: `/admin`
+- Mock dashboard layout with sidebar and top bar
+- Placeholder for admin post management (CRUD not functional)
+
+### 🌐 Tech Stack
+- **Next.js 14 App Router**
+- **Tailwind CSS** (Utility-first styling)
+- **shadcn/ui** (Elegant UI components)
+- **TypeScript** (Static typing)
+- **React Query** (Client-side data fetching and caching)
+- **JSONPlaceholder API** (Mock API data source)
+
+---
 
 ## Getting Started
 
