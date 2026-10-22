@@ -4,13 +4,14 @@ import { getPost } from "@/lib/api";
 import type { Post } from "@/types/post";
 
 type EditPostPageProps = {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 };
 
 export default async function EditPostPage({ params }: EditPostPageProps) {
-  const post: Post = await getPost(params.id);
+  const { id } = await params;
+  const post: Post = await getPost(id);
 
   return (
     <main className="p-6 max-w-3xl mx-auto">

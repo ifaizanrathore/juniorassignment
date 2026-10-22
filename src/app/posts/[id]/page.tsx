@@ -1,13 +1,14 @@
 import { getPost } from "@/lib/api";
 
 type PostDetailsProps = {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 };
 
 export default async function PostDetails({ params }: PostDetailsProps) {
-  const post = await getPost(params.id);
+  const { id } = await params;
+  const post = await getPost(id);
   return (
     <main className="p-6 max-w-3xl mx-auto">
       <h1 className="text-2xl font-bold mb-4">{post.title}</h1>
